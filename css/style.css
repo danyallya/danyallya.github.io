@@ -1,0 +1,132 @@
+@font-face {
+    font-family: iransans;
+    font-style: normal;
+    font-weight: 700;
+    src: url(../fonts/iransans-bold.woff?a762a767a3459fec2195da1373ebf0b1) format("woff")
+}
+
+@font-face {
+    font-family: iransans;
+    font-style: normal;
+    font-weight: 700;
+    src: url(../fonts/iransans-bold.woff?a762a767a3459fec2195da1373ebf0b1) format("woff")
+}
+
+@font-face {
+    font-family: iransans;
+    font-style: normal;
+    font-weight: 300;
+    src: url(../fonts/iransans-light.woff?469a8f6aa5b4631045b7d922102392ac) format("woff")
+}
+
+@font-face {
+    font-family: iransans;
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/iransans.woff?df14582918ca379a280e453bb3cc6ba5) format("woff")
+}
+
+@font-face {
+    font-family: iransans-num;
+    font-style: normal;
+    font-weight: 700;
+    src: url(../fonts/iransans-fa-num-bold.woff?e836ee3ec82a8794c92cc132e6351695) format("woff")
+}
+
+@font-face {
+    font-family: iransans-num;
+    font-style: normal;
+    font-weight: 300;
+    src: url(../fonts/iransans-fa-num-light.woff?1affe2af4bb70abb35723371a8d8dbaf) format("woff")
+}
+
+body {
+    font-family: iransans !important;
+    width: 100%;
+    direction: rtl;
+    text-align: center;
+    height: 100%;
+    background: url('../image/black_denim.png');
+    background-attachment: fixed;
+    margin: 0 auto;
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/*	general	*/
+
+section {
+    padding: 50px 0;
+}
+
+/*	gallery */
+
+.gallery-title {
+    font-size: 36px;
+    color: #181818;
+    width: 14%;
+    background-color: #d7bc3a;
+    text-align: center;
+    font-weight: bold;
+    margin: 0 auto;
+    border-radius: 4px;
+    margin-bottom: 29px;
+    margin-top: 14px;
+    padding: 7px;
+}
+
+.filter-button {
+    font-size: 18px;
+    border: 2px solid #d7bc3a;
+    padding: 5px 10px;
+    text-align: center;
+    color: #d7bc3a;
+    margin-bottom: 30px;
+    transition: .33s all ease-out;
+
+    background: transparent;
+}
+
+.filter-button:hover,
+.filter-button:focus,
+.filter-button.active {
+    font-weight: bold;
+
+    color: #181818;
+    background-color: #d7bc3a;
+    outline: none;
+}
+
+.gallery_product {
+    margin: 0px;
+    padding: 0;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.gallery_product .img-info {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
+    overflow: hidden;
+    color: #fff;
+    top: 0;
+    display: none;
+    -webkit-transition: 2s;
+    transition: 2s;
+}
+
+.gallery_product:hover .img-info {
+    display: block;
+    -webkit-transition: 2s;
+    transition: 2s;
+}
+
+/*	end gallery */
