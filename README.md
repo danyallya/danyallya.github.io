@@ -1,56 +1,21 @@
-# Free Website Templates Demo
+# Danyal Yasheikh — Portfolio
 
-This repository showcases a collection of **free HTML templates** I've designed for various business categories.  
-All templates are ready-to-use and fully responsive.
+Personal portfolio and searchable public project archive, published at https://danyallya.github.io/.
 
-## 🌐 Live Demo
-Explore all templates here:  
-👉 [https://danyallya.github.io/](https://danyallya.github.io/)
+## Run locally
 
-## 🛠️ Templates Included
+Serve this directory with any static HTTP server, for example `python -m http.server 4173`, then visit `http://localhost:4173`.
 
-### 🧑‍⚖️ Lawyers
-- [Lawyers Template #1](lawyers1/index.html)
-- [Lawyers Template #2](lawyers3/index.html)
-- [Lawyers Template #3](lawyers4/index.html)
+No build step, framework, runtime API request, analytics or external font service is required. The bundled catalogue remains available if the GitHub API is unavailable.
 
-### 💪 Gym & Fitness
-- [Gym Template #1](GymFit/index.html)
-- [Gym Template #2](Fitness/index.html)
-- [Gym Template #3](PerfectGym/perfect-gym.html)
+## Update the public project archive
 
-### 🚗 Car Gallery
-- [Car Gallery #1](car1/index.html)
-- [Car Gallery #2](car2/index.html)
-- [Car Gallery #3](car3/index.html)
+With Node.js 18 or newer, run `node scripts/refresh-catalog.mjs`. This reads only GitHub's public user-repositories endpoint, excludes forks and the profile/portfolio repositories, and regenerates `repositories.json` and `projects.js`. Review and commit both files. Run `node scripts/build-catalog.mjs` to regenerate from the saved snapshot without network access.
 
-### ✈️ Travel Agencies
-- [Travel Template #1](air/index.html)
-- [Travel Template #2](air2/index.html)
-- [Travel Template #3](air3/index.html)
+Years come from repository names. Categories are editorial groupings. Detailed featured descriptions come from public project READMEs; generic descriptions identify category and repository language without claiming unverified functionality.
 
-### 🎓 Technical Institutes
-- [Institute Template #1](technical/index.html)
-- [Institute Template #2](technical2/index.html)
+## Publishing
 
-### 🎉 Wedding Halls
-- [Wedding Template #1](wedding1/index.html)
+GitHub Pages serves the repository root on the existing `master` branch. Current entry points are `index.html`, `portfolio.css`, `portfolio.js` and `projects.js`. `.nojekyll` keeps delivery static. Historical assets are retained; obsolete demo paths have been replaced with public source links.
 
-## 📦 How to Use
-1. Click any template above
-2. View the live demo
-3. Download the files
-4. Customize for your project
-
-## 📜 License
-Free for personal and commercial use 
-
-
-
-# Contact Information
-
-Phone: +98 935 162 96 70
-
-Email: danyal.yasheikh@gmail.com
-
-
+The original gallery preview illustrates the legal template collection. The MileMaster image comes from its public repository. Source availability is not a reuse license; check each project's license.
